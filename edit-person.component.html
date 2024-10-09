@@ -1,0 +1,7 @@
+<h2>Edit Person</h2>
+<div *ngIf="person">
+  <label>Name: <input [(ngModel)] ="person.name" /></label><br />
+  <label>Age: <input [(ngModel)] ="person.age" type="number" /></label><br />
+  <label>Email: <input [(ngModel)] ="person.email" /></label><br />
+  <button (click)="save()">Save</button>
+</div>
